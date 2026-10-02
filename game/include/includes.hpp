@@ -13,4 +13,6 @@
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
 
+enum class State {NORMAL, INVENTORY};
+
 #endif
