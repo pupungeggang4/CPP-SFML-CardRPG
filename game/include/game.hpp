@@ -3,14 +3,17 @@
 
 #include "includes.hpp"
 
+class Scene;
 class Game {
     public:
         // System
-        sf::RenderWindow window;
+        sf::RenderWindow window; float aspRatio = 16.0f / 9.0f; unsigned int width, height;
+        sf::View viewUI, viewCamera;
         sf::Clock clock; float dt;
 
         // Game System
-        State state;
+        int state;
+        std::unordered_map<std::string, shared_ptr<Scene>> scenes;
 
         // Functions
         Game();

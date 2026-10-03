@@ -13,6 +13,9 @@
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
 
-enum class State {NORMAL, INVENTORY};
+enum State {NORMAL, INVENTORY};
+
+using std::shared_ptr;
+using std::make_shared;
 
 #endif
